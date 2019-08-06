@@ -68,7 +68,7 @@ app.post('*', (req, res) => {
   let client_phone_number = phoneNumber;
   let sms_message;
 
-
+//query the db for the rider info and get the result
   console.log(`sms received`);
   Riders.findOne({ plateNumber: text }).exec().then((result) => {
     if (result) {
