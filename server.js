@@ -39,7 +39,7 @@ app.post('*', (req, res) => {
 
   const credentials = {
     apiKey: process.env.API_KEY,
-    username: 'loopedin',
+    username: 'sandbox',
   }
 
   // Initialize the SDK
@@ -55,7 +55,7 @@ app.post('*', (req, res) => {
       // Set your message
       message: sms_message,
       // Set your shortCode or senderId
-      from: "22384"
+      from: "65456"
     }
     
     sms.send(options)
