@@ -40,7 +40,6 @@ app.post('*', (req, res) => {
   const credentials = {
     apiKey: process.env.API_KEY,
     username: 'loopedin',
-    from: '22384'
   }
 
   // Initialize the SDK
